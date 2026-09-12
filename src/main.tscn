@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://805pjgdw1d2f"]
+
+[ext_resource type="Script" uid="uid://7m6c0phu01dd" path="res://allOfTheseSguts.gd" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://7owomme74u5t" path="res://wbg-1.png" id="1_ig7tw"]
+
+[sub_resource type="Theme" id="Theme_7v02q"]
+
+[node name="Control" type="Control" unique_id=1657085863]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0xm2m")
+
+[node name="Panel" type="Panel" parent="." unique_id=970202332]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 3.0
+offset_bottom = 1.0
+theme = SubResource("Theme_7v02q")
+
+[node name="PanelWhy" type="Panel" parent="Panel" unique_id=2025233038]
+layout_mode = 0
+offset_right = 855.0
+offset_bottom = 572.0
+
+[node name="PanelWhy2TheFuckAmIDoingThis" type="Panel" parent="Panel/PanelWhy" unique_id=547113315]
+layout_mode = 0
+offset_right = 858.0
+offset_bottom = 573.0
+
+[node name="Wbg1" type="Sprite2D" parent="." unique_id=399571415]
+position = Vector2(425.00003, 269)
+scale = Vector2(0.66, 0.66)
+texture = ExtResource("1_ig7tw")
+
+[node name="launch" type="Button" parent="." unique_id=1719694731]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 532.0
+offset_right = 843.0
+offset_bottom = 563.0
+mouse_default_cursor_shape = 2
+text = "Launch"
+
+[node name="confighellobutton" type="Button" parent="." unique_id=233085738]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.007
+anchor_top = 0.012
+anchor_right = 0.12900001
+anchor_bottom = 0.067
+offset_left = 0.021999836
+offset_top = 0.14799976
+offset_right = -34.166008
+offset_bottom = -2.257
+tooltip_text = "Opens the /.config folder"
+mouse_default_cursor_shape = 2
+text = "Open Config"
+
+[connection signal="pressed" from="launch" to="." method="_on_launchbutton_shitted"]
