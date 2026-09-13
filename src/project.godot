@@ -32,6 +32,11 @@ window/size/maximize_disabled=true
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
+[editor]
+
+version_control/plugin_name="GitPlugin"
+version_control/autoload_on_startup=true
+
 [input_devices]
 
 joypads/ignore_joypad_on_unfocused_application=true
